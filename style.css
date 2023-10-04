@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Inter:wght@100;200;300;400;700&family=Poppins:wght@100&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@100&family=Rubik&display=swap");
+
+:root {
+  /* Primary */
+
+  --Verydarkblue: hsl(233, 47%, 7%);
+  --Darkdesaturatedblue: hsl(244, 38%, 16%);
+  --Softviolet: hsl(277, 64%, 61%);
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Slightlytransparentwhite2: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--Verydarkblue);
+  font-family: "Inter", sans-serif;
+}
+h1,
+h3 {
+  color: var(--White);
+}
+p {
+  color: var(--Slightlytransparentwhite);
+  line-height: 150%;
+}
+.colo-text {
+  color: var(--Softviolet);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 70vw;
+  height: 60vh;
+  background: var(--Darkdesaturatedblue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 15px;
+  overflow: hidden;
+}
+.text-card {
+  padding: 50px 60px;
+  padding-right: 90px;
+  display: grid;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+}
+.stats {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: auto auto auto;
+  font-family: "Lexend Deca", sans-serif;
+  
+}
+.stat {
+  text-transform: uppercase;
+}
+.stat p {
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 200;
+}
+.img-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-card::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: hsl(277, 100%, 32%);
+  opacity: 0.5;
+  z-index: 99;
+}
