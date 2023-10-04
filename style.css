@@ -29,7 +29,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 h1,
-h3 {
+h2 {
   color: var(--White);
 }
 p {
@@ -96,4 +96,33 @@ p {
   background: hsl(277, 100%, 32%);
   opacity: 0.5;
   z-index: 99;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-attachment: fixed;
+        overflow: scroll;
+        padding: 50px 30px;
+        height: max-content;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+    .img-card {
+        height: 30vh;
+    }
+    .text-card {
+        align-items: center;
+        text-align: center;
+        padding: 50px 30px;
+        gap: 15px;
+    }
+    .stats {
+        grid-template-columns: none;
+        gap: 25px;
+    }
+    
 }
